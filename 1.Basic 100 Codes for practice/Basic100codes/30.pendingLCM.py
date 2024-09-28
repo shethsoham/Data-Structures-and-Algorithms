@@ -1,0 +1,1 @@
+# Formula for LCM = num1 * num2 /HCF 
