@@ -1,5 +1,6 @@
 '''
 Here is the Brute force algorithm for sorting of the elements
+T.C : O(n)
 
 '''
 
