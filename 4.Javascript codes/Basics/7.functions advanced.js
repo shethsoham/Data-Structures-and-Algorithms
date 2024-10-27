@@ -10,7 +10,8 @@ function fun1(){
     console.log(myLocal)// can access outside the function 
 }
 fun1()
-console.log(fun1.myLocal)// can't access outrside the function
+console.log(myLocal)
+console.log(fun1.myLocal)// can't access outside the function
 console.log("Decalred inside function still global", oopsGlobal)
 console.log(typeof myGlobal)
 //------------------------------------------------------------------------------------------------

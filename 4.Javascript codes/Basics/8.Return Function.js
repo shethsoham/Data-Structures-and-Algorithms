@@ -46,3 +46,4 @@ function processed(num){
 
 process=processed(10)
 console.log("Value of processed is ", process)
+
