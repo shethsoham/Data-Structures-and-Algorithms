@@ -1,13 +1,13 @@
 // 
 
 function nextInLine(arr, item){
-    arr.push(item)
-    return arr.shift
+    arr.push(item);
+    return arr.shift();
 }
 
-var testCase = [1,2,3,4,5]
+var testArr = [1,2,3,4,5]
 
-console.log("Before "+ JSONstringify(testArr));
-console.log(nextLine(testArr, 6));
-console.log("After "+ JSONstringify(testArr));
+console.log("Before "+ JSON.stringify(testArr));
+console.log((nextInLine(testArr, 6)));
+console.log("After "+ JSON.stringify(testArr));
 
