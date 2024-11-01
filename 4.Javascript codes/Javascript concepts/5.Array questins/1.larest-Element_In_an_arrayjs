@@ -1,0 +1,15 @@
+// Largest eleement in an array
+
+const arr = [3,4,1,2,4,5,7,5,2,1]
+
+let n = arr.length
+
+largest = arr[0];
+for(let i = 1; i <=n;i++){
+    if (arr[i]>largest){
+        largest = a[i];
+    }
+    else{
+
+    }
+}
