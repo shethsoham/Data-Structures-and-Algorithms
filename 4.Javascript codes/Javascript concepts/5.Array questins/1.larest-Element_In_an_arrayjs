@@ -2,14 +2,33 @@
 
 const arr = [3,4,1,2,4,5,7,5,2,1]
 
-let n = arr.length
 
-largest = arr[0];
-for(let i = 1; i <=n;i++){
-    if (arr[i]>largest){
-        largest = a[i];
-    }
-    else{
 
+class Solution {
+    /**
+    * @param number[] arr
+
+    * @returns number
+    */
+    largest(arr) {
+        // code here
+        let n = arr.length;
+        let large = arr[0];
+        for(let i=1;i<=n-1;i++){
+            if (arr[i] > large){
+                large = arr[i]
+            }
+        
+        }
+        return large;
+        
     }
 }
+
+// Create an instance of class solution 
+const solution = new Solution();
+
+// call the largest method of the instance 
+console.log(solution.largest([3,4,1,2,4,5,7,5,2,1]))
+
+
