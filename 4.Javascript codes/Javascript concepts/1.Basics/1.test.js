@@ -1,5 +1,7 @@
 //npm install prompt-sync : add comment in terminal first
 
+const prompt = require('prompt-sync')();
+process.stdout.write("* ");
 /*
 multiple
 line comments
