@@ -45,5 +45,12 @@ var runningSum = function(nums) {
  * @return {number[]}
  */
 var runningSum = function(nums) {
-
-    
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        # reducing the space complexity -O(1) and time complexity -O(n)
+        number = 0
+        for i in range(0,len(nums)):
+            number = number + nums[i]
+            nums[i]=number 
+        return nums
+        
