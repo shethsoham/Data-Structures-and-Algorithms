@@ -1,0 +1,19 @@
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function(prices) {
+    // if you are buying and selling on the same day the profit is 0
+    // if you are selling on the i-th day then you buy it on minimum prices from 1st (i-1)
+    let minimum = prices[0];
+    let profit = 0;
+    
+    for (let i = 1; i < prices.length; i++) {
+        // Calculate the profit if selling on the i-th day
+        let cost = prices[i] - minimum;
+        profit = Math.max(profit, cost);
+        minimum = Math.min(minimum, prices[i]);
+    }
+
+    return profit;
+};

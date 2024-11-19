@@ -45,3 +45,5 @@ class Solution:
             hashmap[num] = i
 
         return []  # In case there's no solution, though problem guarantees one solution
+
+
