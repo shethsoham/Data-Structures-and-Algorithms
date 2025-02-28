@@ -242,3 +242,11 @@ Closure :Function bundled with its lexical environment is known as a closure. Wh
 2. Even if we return the function, it still remembers its original lexical environment and local storage so it can access values.
 3. If we write return function x(){.....} --- this automatically returns the value.
 4. The function that is returned is reference so any change in value of that variable inside function will be reflected as such.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+DAY 11: NOTES: setTimeout + Closures Interview Question 🔥 | Namaste 🙏 JavaScript Ep. 11
+----------------------------------------------------
+Things learned:
+1. setTimeout stores the function in a different place and attached a timer to it, when the timer is finished it rejoins the call stack and executed.
+2. Without closure the var reference gives the latest value as it does not retain the original value but rather has the reference so any update in value after timeout will be shown.
+3. If we use let/const because they have block scope, every time a new copy of variable is attached, thus this can be done without closure.
