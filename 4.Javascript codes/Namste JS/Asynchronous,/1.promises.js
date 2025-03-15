@@ -1,6 +1,6 @@
 const myPromise = new Promise(function(resolve,reject){
         let success = true;
-        setTimeout(()=>{
+        setTimeout(function(){
             if (success){
                 resolve("Promise is resolved succesfully");
             }else{
@@ -11,8 +11,12 @@ const myPromise = new Promise(function(resolve,reject){
 
 myPromise
     .then(function(result){
-        console.log(result)
+        console.log(result);
     })
     .catch(function(error){
-        console.log(error)
+        console.log(error);
     })
+
+myPromise   
+    .then(result=> console.log(result))
+    .catch(error=>console.log(error))
